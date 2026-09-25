@@ -31,6 +31,7 @@ def test_click_through_rate_rejects_invalid_inputs(
 # Checks that the function returns how many items are in a list of tags.
 def test_count_campaign_tags_returns_the_number_of_tags() -> None:
     assert count_campaign_tags(["video", "search", "priority"]) == 3
+    return len(tags)
 
 
 # Checks that extra spaces are removed from a campaign name.
