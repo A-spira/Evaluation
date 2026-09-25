@@ -1,0 +1,3 @@
+# Campaign ValidatorCampaign Validator is a small Python command-line application for checking advertisingcampaign data. It normalizes a campaign name, calculates a click-through-rate percentage,counts campaign tags, and verifies that the local campaign access token is configured correctly
+
+Set up the environmentInstall , then run:```bashuv sync --locked```This recreates `.venv` exactly from `uv.lock`, including the dev tools (ruff, mypy, pytest). Create .env with  the placeholder with `CAMPAIGN_ACCESS_TOKEN`.`.env` is git-ignored: never commit a real token. Verify```bashuv run ruff format --check .uv run ruff check .uv run mypyuv run pytest```All checks must pass and `git status` must stay clean afterwards.Create `LICENSE`.
