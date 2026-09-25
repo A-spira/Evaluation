@@ -1,5 +1,3 @@
-
-
 def click_through_rate(clicks: int, impressions: int) -> float:
     if clicks < 0:
         raise ValueError("clicks must not be negative")
