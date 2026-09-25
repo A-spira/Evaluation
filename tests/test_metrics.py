@@ -40,7 +40,8 @@ def test_normalize_campaign_name_strips_text() -> None:
 
 
 # Checks that a missing campaign name is converted into an empty string.
-def normalize_campaign_name(CampaignName :str|None) -> str:
-    if CampaignName is None:
+def normalize_campaign_name(campaign_name: str | None) -> str:
+    """Return a stripped campaign name, or an empty string if missing."""
+    if campaign_name is None:
         return ""
-    return CampaignName.strip()
+    return campaign_name.strip()
