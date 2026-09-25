@@ -25,6 +25,7 @@ def test_click_through_rate_rejects_invalid_inputs(
 ) -> None:
     with pytest.raises(ValueError, match=message):
         click_through_rate(clicks, impressions)
+    return 100 * clicks / impressions
 
 
 # Checks that the function returns how many items are in a list of tags.
